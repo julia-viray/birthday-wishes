@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2ebfb;
+}
+
+.container {
+    max-width: 600px; /* Limits width */
+    height: 400px;
+    margin: 0 auto; /* Centers the container */
+    padding: 0 2rem; /* Adds left & right padding */
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-between; /* Distribute content to both sides */
+    align-items: center; /* Vertically align items */
+    padding: 0px 10px;
+}
+
+.profile-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;  /* Aligns the profile image and username */
+    padding: 5px 0px;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;  /* Makes the image circular */
+    margin-right: 10px;  /* Space between the image and the username */
+}
+
+.username {
+    font-size: 1rem;
+}
+
+.profile-right {
+    display: flex;
+    align-items: center; /* Align buttons vertically */
+    padding: 5px 0px;
+}
+
+.follow-btn {
+    font-size: 1rem;
+    background-color: #405DE6;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 10px; /* Space between follow and more button */
+}
+
+.more-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.more-btn i {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.carousel-inner img {
+    border-radius: 8px;
+    height: 500px; /* Fixed height of the image */
+    width: 100%; /* Makes sure the image stretches across the container */
+    object-fit: cover; /* Ensures the image fills the container without stretching */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the carousel control arrows */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent;  /* Change the color of the navigation arrows */
+}
+
+/* Inline styling for like, comment, and share buttons */
+.d-flex {
+    flex-direction: row;
+    gap: 5px;
+}
+
+/* Styling for the buttons */
+.btn {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+}
+
+/* Button icon style (to make it more Instagram-like) */
+.btn i {
+    font-size: 1.5rem;
+}
+
+.caption-container {
+    display: flex;
+    flex-direction: row; /* Center them horizontally */
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.caption-text {
+    font-size: 14px;
+    color: #666;
+    margin: 0px 10px 10px;
+}
+
+.caption-username {
+    font-size: 1rem;
+    font-weight: bold;
+    color: black; /* Add a blue color to make the username stand out */
+    cursor: pointer;
+}
+
+/* Progress bar */
+.progress-bar {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    appearance: none;
+    height: 5px;
+    outline: none;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+
+.progress-bar::-moz-range-thumb {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+
+/* Optional: Adjust button layout for mobile responsiveness */
+@media (max-width: 768px) {
+    .d-flex {
+        gap: 30px;
+        padding: 0px 10px;
+    }
+
+    .btn {
+        padding: 0;
+    }
+
+    .container {
+        margin: 0 !important; /* Remove top & bottom margins */
+        padding: 0 !important; /* Remove padding */
+        width: 100% !important; /* Ensure full width */
+        max-width: 100% !important; /* Override Bootstrap's max-width */
+    }
+}
